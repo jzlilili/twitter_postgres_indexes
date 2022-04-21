@@ -10,4 +10,3 @@ FROM (
 ) t
 GROUP BY lang
 ORDER BY COUNT DESC, lang;
-

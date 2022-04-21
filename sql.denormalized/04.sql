@@ -12,7 +12,6 @@ FROM (
     WHERE to_tsvector('english', data->'extended_tweet'->>'full_text') @@
           to_tsquery('english', 'coronavirus')
       AND data->>'lang' = 'en'
-    LIMIT 6056
 ) t;
 
 
